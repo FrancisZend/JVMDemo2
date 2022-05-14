@@ -10,7 +10,11 @@ import java.util.ArrayList;
 public class GCLogTest {
     public static void main(String[] args) {
         ArrayList<byte[]> list = new ArrayList<>();
-
+        try {
+            Thread.sleep(30000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         for (int i = 0; i < 500; i++) {
             byte[] arr = new byte[1024 * 100];//100KB
             list.add(arr);
