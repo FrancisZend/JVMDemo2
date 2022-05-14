@@ -16,6 +16,7 @@ public class GCLogTest {
             e.printStackTrace();
         }
         System.out.println("hot-fix分支第一次提交");
+        System.out.println("hot-fix分支第二次提交");
         for (int i = 0; i < 500; i++) {
             byte[] arr = new byte[1024 * 100];//100KB
             list.add(arr);
